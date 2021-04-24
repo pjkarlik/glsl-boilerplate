@@ -1,6 +1,6 @@
 ###
 
-![travis ci build](https://travis-ci.org/pjkarlik/truchet-webgl.svg?branch=main)
+![travis ci build](https://travis-ci.org/pjkarlik/glsl-boilerplate.svg?branch=main)
 
 # GLSL Fragment Shader Boilerplate
 
