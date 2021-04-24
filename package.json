@@ -7,7 +7,7 @@
     "clean": "rm -rf dist",
     "build": "npm run clean && ./node_modules/.bin/webpack --config ./config/webpack.prod.js",
     "dev": "./node_modules/.bin/webpack serve --config ./config/webpack.dev.js",
-    "webpack": "./node_modules/.bin/webpack --progress --colors"
+    "webpack": "./node_modules/.bin/webpack --progress"
   },
   "repository": {
     "type": "git",
