@@ -197,11 +197,6 @@ export default class Render {
     );
     this.ut = this.gl.getUniformLocation(this.program, "time");
     this.ms = this.gl.getUniformLocation(this.program, "mouse");
-    this.c1 = this.gl.getUniformLocation(this.program, "colorA");
-    this.c2 = this.gl.getUniformLocation(this.program, "colorB");
-
-    this.gl.uniform1f(this.c1, this.color1);
-    this.gl.uniform1f(this.c2, this.color2);
   };
 
   /**
@@ -210,8 +205,10 @@ export default class Render {
   updateUniforms = () => {
     this.gl.uniform1f(this.ut, (Date.now() - this.start) / 1000);
     const mouse = this.mouse.pointer();
+    //normalize mouse to screen size and resolution
     this.umouse = [mouse.x / rez, this.canvas.height - mouse.y / rez, mouse.z];
     const factor = 0.15;
+    // cheap lerp on movement - makes it feel softer
     this.tmouse[0] =
       this.tmouse[0] - (this.tmouse[0] - this.umouse[0]) * factor;
     this.tmouse[1] =
