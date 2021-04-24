@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "clean": "rm -rf dist",
-    "build": "npm run clean && webpack --config ./config/webpack.prod.js",
-    "dev": "webpack serve --config ./config/webpack.dev.js"
+    "build": "npm run clean && ./node_modules/.bin/webpack --config ./config/webpack.prod.js",
+    "dev": "./node_modules/.bin/webpack serve --config ./config/webpack.dev.js"
   },
   "repository": {
     "type": "git",
