@@ -17,7 +17,7 @@ mouse position which is normalized to the screen resolution.
 |   |   |-- frg-shader.js
 |   |   |-- vrt-shader.js
 |   |   
-|   |-- shaders
+|   |-- utils
 |   |   |-- mouse.js
 |   |   
 |   |-- bootstrap.js
