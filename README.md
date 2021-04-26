@@ -57,7 +57,7 @@ Requires Node v12.xx.xx or greater
 
 ```bash
 $ npm install
-$ npm run dev
+$ npm run start
 ```
 and to build out to dist
 ```bash
