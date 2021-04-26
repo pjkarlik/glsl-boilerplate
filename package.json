@@ -6,9 +6,9 @@
   "scripts": {
     "start": "./node_modules/.bin/webpack serve",
     "clean": "rm -rf dist",
-    "build": "npm run clean && ./node_modules/.bin/webpack --progress",
+    "build": "npm run clean && ./node_modules/.bin/webpack",
     "test": "./node_modules/.bin/eslint ./src",
-    "webpack": "./node_modules/.bin/webpack --progress"
+    "webpack": "./node_modules/.bin/webpack"
   },
   "repository": {
     "type": "git",
